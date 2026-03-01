@@ -15,7 +15,7 @@ app.post('/ask', async (req, res) => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        model: 'llama3-8b-8192',
+        model: 'llama-3.3-70b-versatile',
         messages: [{ role: 'user', content: userMessage }]
       })
     });
@@ -35,3 +35,4 @@ app.post('/ask', async (req, res) => {
 });
 
 app.listen(3000, () => console.log('Server running!'));
+
